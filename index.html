@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valdevit Loïc - Les formulaires</h1>
+
+    <h2>Mon premier formulaire</h2>
+
+    <form action="#" method="POST">
+        <label for="homme">Homme</label><input type="radio" name="sexe" id="homme">
+        &nbsp;&nbsp;&nbsp;&nbsp;<label for="femme">Femme</label><input type="radio" name="sexe" id="femme">
+        &nbsp;&nbsp;&nbsp;&nbsp;<label for="nonrenseigne">Non renseigné</label><input type="radio" name="sexe" id="nonrenseigne"><br>
+        &nbsp;<br>
+        <label for="nom">Nom :</label>&nbsp;&nbsp;<input type="text" name="nom" placeholder="ex : Deschamps" id="nom"><br>
+        &nbsp;<br>
+        <label for="prenom">Prénom :</label>&nbsp;&nbsp;<input type="text" name="prenom" placeholder="ex : Didier" id="prenom"><br>
+        &nbsp;<br>
+        <label for="age">Age :</label>&nbsp;&nbsp;<input type="number" name="age" placeholder="ex : 58" min="16" max="99" id="age"><br>
+        &nbsp;<br>
+        <label for="email">Email :</label>&nbsp;&nbsp;<input type="email" name="email" placeholder="ex : d.d@gmail.com" pattern=".+@globex\.com" id="email"><br>
+        &nbsp;<br>
+        <label for="message">Message :</label>&nbsp;&nbsp;<textarea name="message" rows="5" cols="25" id="message"></textarea><br>
+        &nbsp;<br>
+        <input type="checkbox" name="donnee" id="donnee">&nbsp;&nbsp;<label for="donnee">En cochant cette case j'accèpte les conditions<br>
+            relatives à l'utilisation de mes données personnelles.<br>
+            (accéder aux mentions légales)</label><br>
+        &nbsp;<br>
+        <input type="button" name="boutondonnees" value="envoyer">
+    </form>
+
+    <hr>
+
+    <h2>Ensemble de champs</h2>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>MON SECOND FORMULAIRE</legend>
+            <fieldset>
+                <legend>Identité</legend>
+                <label for="homme2">Homme</label><input type="radio" name="sexe2" id="homme2">
+                &nbsp;&nbsp;&nbsp;&nbsp;<label for="femme2">Femme</label><input type="radio" name="sexe2" id="femme2">
+                &nbsp;&nbsp;&nbsp;&nbsp;<label for="nonrenseigne2">Non renseigné</label><input type="radio" name="sexe2" id="nonrenseigne2"><br>
+                &nbsp;<br>
+                <label for="nom2">Nom :</label>&nbsp;&nbsp;<input type="text" name="nom" placeholder="ex : Deschamps" id="nom2"><br>
+                &nbsp;<br>
+                <label for="prenom2">Prénom :</label>&nbsp;&nbsp;<input type="text" name="prenom" placeholder="ex : Didier" id="prenom2"><br>
+                &nbsp;<br>
+                <label for="age2">Age :</label>&nbsp;&nbsp;<input type="number" name="age" placeholder="ex : 58" min="16" max="99" id="age2"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Situation personnelle</legend>
+                <label for="celibataire">Célibataire</label><input type="radio" name="situation" id="celibataire">
+                &nbsp;&nbsp;&nbsp;&nbsp;<label for="marie">Marié</label><input type="radio" name="situation" id="marie">
+                &nbsp;&nbsp;&nbsp;&nbsp;<label for="veuf">Veuf</label><input type="radio" name="situation" id="veuf">
+                &nbsp;&nbsp;&nbsp;&nbsp;<label for="unionlibre">Union libre</label><input type="radio" name="situation" id="unionlibre">
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="telephone2">Téléphone :</label>&nbsp;&nbsp;<input type="tel" name="telephone" placeholder="ex : 0625847625" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="telephone2"><br>
+                &nbsp;<br>
+                <label for="email2">Email :</label>&nbsp;&nbsp;<input type="email" name="email" placeholder="ex : d.d@gmail.com" pattern=".+@globex\.com" id="email2"><br>
+            </fieldset>
+            &nbsp;<br>
+            <input type="checkbox" name="renseignements" id="renseignements">&nbsp;&nbsp;<label for="renseignements">En cochant cette case je confirme que les données renseignées<br>
+                sont exactes.<br></label>
+                &nbsp;<br>
+            <input type="button" name="boutoncoordonnees" value="Transmettre mes coordonnées">
+        </fieldset>
+    </form>
+</body>
+</html>
